@@ -13,7 +13,9 @@ Few differences:
 
 ## Using it in a new location
 
-    cd && git clone --recursive https://github.com/reidrac/dotvim.git
+You shouldn't have a `~/.vimrc` or `~/.vim` directory.
+
+    cd && git clone --recursive https://github.com/reidrac/dotvim.git .vim
 
 If you're not using vim 8; create a `.vimrc` with:
 
