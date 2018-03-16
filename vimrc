@@ -68,6 +68,11 @@ call pathogen#infect()
 
 " looks nice; apparently needs to go after pathogen
 set background=dark
-colorscheme base16-google-dark
+if has('gui_running')
+	colorscheme base16-google-dark
+else
+	colorscheme torte
+	set nospell
+endif
 let base16colorspace=256  " Access colors present in 256 colorspace
 
