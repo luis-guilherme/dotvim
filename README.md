@@ -13,7 +13,7 @@ Few differences:
 
 ## Using it in a new location
 
-    cd ~ && git clone --recursive https://github.com/reidrac/dotvim.git
+    cd && git clone --recursive https://github.com/reidrac/dotvim.git
 
 If you're not using vim 8; create a `.vimrc` with:
 
