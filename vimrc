@@ -21,6 +21,9 @@ filetype plugin indent on
 " line numbers
 set number
 
+" always show status
+set laststatus=2
+
 " highlight end of line whitespace
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
