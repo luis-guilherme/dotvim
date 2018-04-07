@@ -5,8 +5,6 @@ set gtl=%t gtt=%F
 set guioptions-=Tm
 set guioptions=cLrA
 
-" where I am? :)
-set cursorline
 set guifont=Inconsolata\ Medium\ 12
 
 set guicursor+=i:ver100-Cursor/iCursor
