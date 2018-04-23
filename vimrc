@@ -41,6 +41,7 @@ autocmd FileType python let python_highlight_all = 1
 "" extra highlighting
 autocmd FileType python set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
+" syntastic
 let g:syntastic_python_checkers = ['pyflakes']
 let g:syntastic_go_checkers = ['go', 'golint', 'govet', 'errcheck']
 let g:syntastic_scala_scalastyle_jar = '/home/juanmartinez/scala-local/lib/scalastyle_2.12-1.0.0-batch.jar'
@@ -50,7 +51,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_loc_list_height = 5
 
-" manual checks
+"" default to passive and manual checks
 let g:syntastic_mode_map = { 'mode': 'passive' }
 
 " scala
