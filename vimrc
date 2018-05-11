@@ -24,11 +24,26 @@ set number
 " always show status
 set laststatus=2
 
+
 " highlight end of line whitespace
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
 
-" spellcheck please!
+set statusline =
+" Buffer number
+set statusline +=[%n]
+" File description
+set statusline +=\ %f\ %h%m%r%w
+" Filetype
+set statusline +=%y
+" Name of the current branch (needs fugitive.vim)
+set statusline +=\ %{fugitive#statusline()}
+" Total number of lines in the file
+set statusline +=%=%-10L
+" Line, column and percentage
+set statusline +=%=%-14.(%l,%c%V%)\ %P
+
+" " spellcheck please!
 setlocal spell spelllang=en_gb
 hi clear SpellBad
 hi SpellBad term=standout ctermfg=1 cterm=bold gui=undercurl guisp=Red
@@ -78,4 +93,3 @@ else
 	set nospell
 endif
 let base16colorspace=256  " Access colors present in 256 colorspace
-
