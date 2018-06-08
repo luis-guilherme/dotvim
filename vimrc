@@ -82,6 +82,9 @@ let g:easytags_dynamic_files = 1
 " build tags
 map <C-F12> :!ctags -R -f ./.tags .<CR>
 
+" enable omnicompletion
+set omnifunc=syntaxcomplete#Complete
+
 call pathogen#infect()
 
 " looks nice; apparently needs to go after pathogen
