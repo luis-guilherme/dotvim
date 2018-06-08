@@ -50,11 +50,11 @@ hi SpellBad term=standout ctermfg=1 cterm=bold gui=undercurl guisp=Red
 
 " extra python
 "" wrapping and tabs
-autocmd FileType python set ts=4 sw=4 et sta sts=4 ai
+autocmd FileType python setl ts=4 sw=4 et sta sts=4 ai
 "" smart indenting
 autocmd FileType python let python_highlight_all = 1
 "" extra highlighting
-autocmd FileType python set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
+autocmd FileType python setl smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
 " syntastic
 let g:syntastic_python_checkers = ['pyflakes']
