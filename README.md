@@ -34,11 +34,11 @@ If you're not using vim 8; create a `.vimrc` with:
 ### Updating you .vim on a different machine
 
     git pull
-	git submodule update
+    git submodule update
 
 ## Removing plugins
 
     git submodule deinit bundle/foo
-	git rm -r bundle/foo
-	rm -r .git/modules/bundle/foo
+    git rm -r bundle/foo
+    rm -r .git/modules/bundle/foo
 
