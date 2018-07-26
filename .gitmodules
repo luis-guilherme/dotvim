@@ -22,6 +22,3 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/sbt-vim"]
-	path = bundle/sbt-vim
-	url = https://github.com/ktvoelker/sbt-vim.git
