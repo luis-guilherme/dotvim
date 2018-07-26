@@ -38,7 +38,8 @@ If you're not using vim 8; create a `.vimrc` with:
 
 ## Removing plugins
 
-    git submodule deinit bundle/foo
+    git submodule deinit -f bundle/foo
     git rm -r bundle/foo
-    rm -r .git/modules/bundle/foo
+	git commit -am "Removed plugin"
+    rm -rf .git/modules/bundle/foo
 
