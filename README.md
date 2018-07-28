@@ -26,6 +26,10 @@ If you're not using vim 8; create a `.vimrc` with:
     git submodule add https://github.com/user/foo.git bundle/foo
     git commit -m "Added foo plugin"
 
+You may want to index the plugin docs with:
+
+    :helptags ~/.vim/bundle/foo/doc/
+
 ## Updating plugins
 
     git submodule foreach git pull origin master
