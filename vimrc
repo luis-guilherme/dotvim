@@ -86,6 +86,7 @@ map <C-F12> :!ctags -R -f ./.tags .<CR>
 set omnifunc=syntaxcomplete#Complete
 
 call pathogen#infect()
+call pathogen#helptags()
 
 " looks nice; apparently needs to go after pathogen
 set background=dark
