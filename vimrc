@@ -97,3 +97,7 @@ else
 	set nospell
 endif
 let base16colorspace=256  " Access colors present in 256 colorspace
+
+" default is too slow
+set updatetime=200
+

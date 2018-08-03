@@ -25,3 +25,6 @@
 [submodule "bundle/tcomment_vim"]
 	path = bundle/tcomment_vim
 	url = https://github.com/tomtom/tcomment_vim
+[submodule "bundle/vim-gitgutter"]
+	path = bundle/vim-gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git
