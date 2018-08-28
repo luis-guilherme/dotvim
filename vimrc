@@ -69,11 +69,8 @@ let g:syntastic_loc_list_height = 5
 "" default to passive and manual checks
 let g:syntastic_mode_map = { 'mode': 'passive' }
 
-" scala
-let g:scala_scaladoc_indent = 1
+"" vim-autoformat
 noremap <C-F5> :Autoformat<CR>
-let g:formatdef_scalariform = '"java -jar /home/juanmartinez/scalalocal/lib/scalariform.jar -f -q +compactControlReadability +alignParameters +alignSingleLineCaseStatements +doubleIndentConstructorArguments +rewriteArrowSymbols +preserveSpaceBeforeArguments --stdin --stdout"'
-let g:formatters_scala = ['scalariform']
 
 " use local tags if found
 set tags=./.tags;
