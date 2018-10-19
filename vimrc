@@ -88,7 +88,7 @@ call pathogen#helptags()
 " looks nice; apparently needs to go after pathogen
 set background=dark
 if has('gui_running')
-	colorscheme base16-tomorrow-night
+	colorscheme base16-atelier-forest
 else
 	colorscheme torte
 	set nospell
