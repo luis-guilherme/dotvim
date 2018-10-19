@@ -89,13 +89,13 @@ call pathogen#helptags()
 
 " looks nice; apparently needs to go after pathogen
 set background=dark
+let base16colorspace=256  " Access colors present in 256 colorspace
 if has('gui_running')
 	colorscheme base16-atelier-forest
 else
 	colorscheme torte
 	set nospell
 endif
-let base16colorspace=256  " Access colors present in 256 colorspace
 
 " default is too slow
 set updatetime=200
