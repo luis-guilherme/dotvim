@@ -24,6 +24,8 @@ set number
 " always show status
 set laststatus=2
 
+" enable mouse
+set mouse=a
 
 " highlight end of line whitespace
 highlight WhitespaceEOL ctermbg=red guibg=red
