@@ -91,7 +91,7 @@ call pathogen#helptags()
 set background=dark
 let base16colorspace=256  " Access colors present in 256 colorspace
 if has('gui_running')
-	colorscheme base16-atelier-forest
+	colorscheme base16-monokai
 else
 	colorscheme torte
 	set nospell
