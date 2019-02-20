@@ -88,14 +88,10 @@ call pathogen#infect()
 call pathogen#helptags()
 
 " looks nice; apparently needs to go after pathogen
+set termguicolors
 set background=dark
-let base16colorspace=256  " Access colors present in 256 colorspace
-if has('gui_running')
-	colorscheme base16-monokai
-else
-	colorscheme torte
-	set nospell
-endif
+colorscheme base16-monokai
+set nospell
 
 " default is too slow
 set updatetime=200
