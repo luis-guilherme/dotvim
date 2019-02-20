@@ -92,6 +92,9 @@ set termguicolors
 set background=dark
 colorscheme base16-monokai
 
+" for tmux, screen, etc
+set t_ut=
+
 " default is too slow
 set updatetime=200
 
