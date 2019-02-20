@@ -91,7 +91,6 @@ call pathogen#helptags()
 set termguicolors
 set background=dark
 colorscheme base16-monokai
-set nospell
 
 " default is too slow
 set updatetime=200
