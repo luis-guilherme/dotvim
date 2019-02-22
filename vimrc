@@ -58,6 +58,9 @@ autocmd FileType python let python_highlight_all = 1
 "" extra highlighting
 autocmd FileType python setl smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
+" extra C
+autocmd FileType c setl ts=4
+
 " syntastic
 let g:syntastic_python_checkers = ['pyflakes']
 let g:syntastic_go_checkers = ['go', 'golint', 'govet', 'errcheck']
