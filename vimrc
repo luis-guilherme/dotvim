@@ -27,10 +27,6 @@ set laststatus=2
 " enable mouse
 set mouse=a
 
-" highlight end of line whitespace
-highlight WhitespaceEOL ctermbg=red guibg=red
-match WhitespaceEOL /\s\+$/
-
 set statusline =
 " Buffer number
 set statusline +=[%n]
@@ -95,4 +91,8 @@ set updatetime=200
 
 " make easier to open NERDTree
 map <C-n> :NERDTreeToggle<CR>
+
+" highlight end of line whitespace
+highlight WhitespaceEOL ctermbg=red guibg=red
+match WhitespaceEOL /\s\+$/
 
