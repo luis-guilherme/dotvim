@@ -86,6 +86,7 @@ set updatetime=200
 
 " make easier to open NERDTree
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeQuitOnOpen=1
 
 " highlight end of line whitespace
 highlight WhitespaceEOL ctermbg=red guibg=red
