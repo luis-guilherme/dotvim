@@ -24,6 +24,9 @@ set number
 " always show status
 set laststatus=2
 
+" show cursor line
+set cursorline
+
 " enable mouse
 set mouse=a
 
