@@ -41,11 +41,6 @@ set statusline +=%=%-10L
 " Line, column and percentage
 set statusline +=%=%-14.(%l,%c%V%)\ %P
 
-" spellcheck please!
-setlocal spell spelllang=en_gb
-hi clear SpellBad
-hi SpellBad term=standout ctermfg=1 cterm=bold gui=undercurl guisp=Red
-
 " extra C
 autocmd FileType c setl ts=4
 
