@@ -45,18 +45,10 @@ set statusline +=%=%-10L
 " Line, column and percentage
 set statusline +=%=%-14.(%l,%c%V%)\ %P
 
-" " spellcheck please!
+" spellcheck please!
 setlocal spell spelllang=en_gb
 hi clear SpellBad
 hi SpellBad term=standout ctermfg=1 cterm=bold gui=undercurl guisp=Red
-
-" extra python
-"" wrapping and tabs
-autocmd FileType python setl ts=4 sw=4 et sta sts=4 ai
-"" smart indenting
-autocmd FileType python let python_highlight_all = 1
-"" extra highlighting
-autocmd FileType python setl smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
 " extra C
 autocmd FileType c setl ts=4
@@ -64,15 +56,15 @@ autocmd FileType c setl ts=4
 " syntastic
 let g:syntastic_python_checkers = ['pyflakes']
 let g:syntastic_go_checkers = ['go', 'golint', 'govet', 'errcheck']
-let g:syntastic_scala_scalastyle_jar = '/home/juanmartinez/scala-local/lib/scalastyle_2.12-1.0.0-batch.jar'
-let g:syntastic_scala_scalastyle_config_file = '/home/juanmartinez/scala-local/lib/scalastyle_config.xml'
-let g:syntastic_scala_checkers = ['fsc', 'scalastyle']
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_loc_list_height = 5
 
-"" default to passive and manual checks
+" default to passive and manual checks
 let g:syntastic_mode_map = { 'mode': 'passive' }
+
+" make easy to perform a check
+noremap <C-F6> :SyntasticCheck<CR>
 
 "" vim-autoformat
 noremap <C-F5> :Autoformat<CR>
