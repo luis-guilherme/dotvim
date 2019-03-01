@@ -34,6 +34,10 @@ If you're not using vim 8; create a `.vimrc` with:
 ### Updating you .vim on a different machine
 
     git pull
+
+    # Only if a plugin was added
+    git submodule init
+
     git submodule update
 
 ## Removing plugins
