@@ -82,7 +82,11 @@ colorscheme base16-monokai
 set t_ut=
 
 " default is too slow
-set updatetime=200
+set updatetime=500
+
+" re-read the file if changed (if possible)
+set autoread
+au CursorHold,CursorHoldI * checktime
 
 " make easier to open NERDTree
 map <C-n> :NERDTreeToggle<CR>
