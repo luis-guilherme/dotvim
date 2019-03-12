@@ -2,12 +2,13 @@
 set wrap
 
 " tab position
-set tabstop=4
-
-set autoindent
+set softtabstop=4
 
 " autotab
 set shiftwidth=4
+
+" ditto
+set autoindent
 
 " syntax highlighting
 syntax on
@@ -40,9 +41,6 @@ set statusline +=\ %{fugitive#statusline()}
 set statusline +=%=%-10L
 " Line, column and percentage
 set statusline +=%=%-14.(%l,%c%V%)\ %P
-
-" extra C
-autocmd FileType c setl ts=4
 
 " syntastic
 let g:syntastic_python_checkers = ['pyflakes']
