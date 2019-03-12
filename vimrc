@@ -1,11 +1,11 @@
 " for long lines
 set wrap
 
-" tab position
+" tab business
+set tabstop=8
 set softtabstop=4
-
-" autotab
 set shiftwidth=4
+set expandtab
 
 " ditto
 set autoindent
