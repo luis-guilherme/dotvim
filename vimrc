@@ -58,9 +58,13 @@ noremap <C-F6> :SyntasticCheck<CR>
 "" vim-autoformat
 noremap <C-F5> :Autoformat<CR>
 
+"" vim-easytags
 " use local tags if found
 set tags=./.tags;
-let g:easytags_dynamic_files = 1
+" local tags ALWAYS (unless no write permisssions)
+let g:easytags_dynamic_files = 2
+" try async updates
+let g:easytags_async = 1
 
 " build tags
 map <C-F12> :!ctags -R -f ./.tags .<CR>
