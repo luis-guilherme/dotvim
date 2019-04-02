@@ -58,16 +58,14 @@ noremap <C-F6> :SyntasticCheck<CR>
 "" vim-autoformat
 noremap <C-F5> :Autoformat<CR>
 
-"" vim-easytags
-" use local tags if found
-set tags=./.tags;
-" local tags ALWAYS (unless no write permisssions)
-let g:easytags_dynamic_files = 2
-" try async updates
-let g:easytags_async = 1
-
+" only ctags
+let g:loaded_gentags#gtags = 1
+" auto please
+let g:gen_tags#ctags_auto_gen = 1
+" some info
+let g:gen_tags#statusline = 1
 " build tags
-map <C-F12> :!ctags -R -f ./.tags .<CR>
+map <C-F12> :GenCtags<CR>
 
 " enable omnicompletion
 set omnifunc=syntaxcomplete#Complete

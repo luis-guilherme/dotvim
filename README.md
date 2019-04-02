@@ -44,6 +44,6 @@ If you're not using vim 8; create a `.vimrc` with:
 
     git submodule deinit -f bundle/foo
     git rm -r bundle/foo
-	git commit -am "Removed plugin"
+    git commit -am "Removed plugin"
     rm -rf .git/modules/bundle/foo
 

@@ -7,9 +7,6 @@
 [submodule "bundle/vim-autoformat"]
 	path = bundle/vim-autoformat
 	url = https://github.com/Chiel92/vim-autoformat
-[submodule "bundle/vim-easytags"]
-	path = bundle/vim-easytags
-	url = https://github.com/xolox/vim-easytags.git
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
@@ -37,3 +34,6 @@
 [submodule "bundle/vim-tmux-clipboard"]
 	path = bundle/vim-tmux-clipboard
 	url = https://github.com/roxma/vim-tmux-clipboard.git
+[submodule "bundle/gen_tags.vim"]
+	path = bundle/gen_tags.vim
+	url = https://github.com/jsfaint/gen_tags.vim.git
