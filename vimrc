@@ -58,14 +58,6 @@ noremap <C-F6> :SyntasticCheck<CR>
 "" vim-autoformat
 noremap <C-F5> :Autoformat<CR>
 
-"" gen_tags.vim
-" only ctags
-let g:loaded_gentags#gtags = 1
-" auto please
-let g:gen_tags#ctags_auto_gen = 1
-" build tags
-map <C-F12> :GenCtags<CR>
-
 " enable omnicompletion
 set omnifunc=syntaxcomplete#Complete
 
