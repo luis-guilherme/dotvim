@@ -87,3 +87,7 @@ let NERDTreeQuitOnOpen=1
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
 
+"" gen_tags.vim (reguires GNU global, aka gtags)
+" disable ctags completely, use it through gtags plugin
+let g:loaded_gentags#ctags = 1
+
