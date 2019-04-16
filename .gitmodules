@@ -37,3 +37,6 @@
 [submodule "bundle/gen_tags.vim"]
 	path = bundle/gen_tags.vim
 	url = https://github.com/jsfaint/gen_tags.vim.git
+[submodule "bundle/terminus"]
+	path = bundle/terminus
+	url = https://github.com/wincent/terminus
