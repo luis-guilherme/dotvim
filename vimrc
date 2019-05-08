@@ -71,9 +71,16 @@ let g:gruvbox_italic=1
 let g:gruvbox_contrast_dark="hard"
 colorscheme gruvbox
 
+" show cursor line
+set cursorline
+
 " EOL whitespace
-hi WhitespaceEOL ctermbg=red guibg=red
-match WhitespaceEOL /\s\+$/
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
 
 " for tmux, screen, etc
 set t_ut=
