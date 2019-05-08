@@ -37,6 +37,3 @@
 [submodule "bundle/terminus"]
 	path = bundle/terminus
 	url = https://github.com/wincent/terminus
-[submodule "bundle/vim-monokai"]
-	path = bundle/vim-monokai
-	url = https://github.com/crusoexia/vim-monokai.git
