@@ -70,6 +70,9 @@ set background=dark
 let g:monokai_term_italic=1
 colorscheme monokai
 
+" show the cursor line
+set cursorline
+
 " for tmux, screen, etc
 set t_ut=
 
