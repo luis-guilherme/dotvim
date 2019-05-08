@@ -67,7 +67,8 @@ call pathogen#helptags()
 " looks nice; apparently needs to go after pathogen
 set termguicolors
 set background=dark
-colorscheme base16-monokai
+let g:monokai_term_italic=1
+colorscheme monokai
 
 " for tmux, screen, etc
 set t_ut=
