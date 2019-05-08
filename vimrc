@@ -67,11 +67,13 @@ call pathogen#helptags()
 " looks nice; apparently needs to go after pathogen
 set termguicolors
 set background=dark
-let g:monokai_term_italic=1
-colorscheme monokai
+let g:gruvbox_italic=1
+let g:gruvbox_contrast_dark="hard"
+colorscheme gruvbox
 
-" show the cursor line
-set cursorline
+" EOL whitespace
+hi WhitespaceEOL ctermbg=red guibg=red
+match WhitespaceEOL /\s\+$/
 
 " for tmux, screen, etc
 set t_ut=
@@ -86,10 +88,6 @@ au CursorHold,CursorHoldI * checktime
 " make easier to open NERDTree
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
-
-" highlight end of line whitespace
-highlight WhitespaceEOL ctermbg=red guibg=red
-match WhitespaceEOL /\s\+$/
 
 "" gen_tags.vim (reguires GNU global, aka gtags)
 " disable ctags completely, use it through gtags plugin
