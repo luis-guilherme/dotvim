@@ -71,9 +71,6 @@ let g:gruvbox_italic=1
 let g:gruvbox_contrast_dark="hard"
 colorscheme gruvbox
 
-" show cursor line
-set cursorline
-
 " EOL whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
