@@ -43,14 +43,16 @@ set statusline +=%=%-10L
 set statusline +=%=%-14.(%l,%c%V%)\ %P
 
 " syntastic
-let g:syntastic_python_checkers = ['pyflakes']
+let g:syntastic_python_checkers = ['flake8', 'pyflakes']
 let g:syntastic_go_checkers = ['go', 'golint', 'govet', 'errcheck']
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_loc_list_height = 5
 
 " default to passive and manual checks
-let g:syntastic_mode_map = { 'mode': 'passive' }
+let g:syntastic_mode_map = {
+    \ 'mode': 'passive',
+    \ 'active_filetypes': [ 'python', 'go' ] }
 
 " make easy to perform a check
 noremap <C-F6> :SyntasticCheck<CR>
