@@ -13,6 +13,9 @@ set autoindent
 " syntax highlighting
 syntax on
 
+" no hl search
+set nohlsearch
+
 " try to detect filetypes
 filetype on
 
