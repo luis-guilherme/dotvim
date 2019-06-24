@@ -60,9 +60,6 @@ let g:syntastic_mode_map = {
 " make easy to perform a check
 noremap <C-F6> :SyntasticCheck<CR>
 
-" pydoc and python 3
-let g:pydoc_cmd = 'python3 -m pydoc'
-
 "" vim-autoformat
 noremap <C-F5> :Autoformat<CR>
 
