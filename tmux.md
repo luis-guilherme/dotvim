@@ -4,6 +4,7 @@ Required:
 
  - tmux 2.4+
  - xclip (this is for X, sorry)
+ - requires a powerline compatible font (tip: install `powerline-tools` in Debian/Ubuntu)
 
 This is not vim related, but I find it very useful so I like to keep it with my
 vim conf.
