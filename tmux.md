@@ -18,6 +18,6 @@ ln -s ~/.vim/tmux.conf ~/.tmux.conf
 Run tmux with `-u2`, or add an alias to your `~/.bashrc`:
 
 ```
-alias tmux="tmux -u2"
+alias tmux="TERM=tmux-256color tmux -u2"
 ```
 
