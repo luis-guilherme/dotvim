@@ -40,6 +40,3 @@
 [submodule "bundle/vim-bufkill"]
 	path = bundle/vim-bufkill
 	url = https://github.com/qpkorr/vim-bufkill
-[submodule "bundle/gruvbox-community"]
-	path = bundle/gruvbox-community
-	url = git@github.com:gruvbox-community/gruvbox.git
