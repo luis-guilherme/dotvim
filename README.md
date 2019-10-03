@@ -9,7 +9,9 @@ Few differences:
  - My repo is in `~/.vim/`
  - I use pathogen to manage the plugins (should move to Vim 8's packages, but I
    still have few Vim 7.x boxes)
- - Includes gvim configuration
+ - Includes gvim configuration (outdated, I don't use it anymore)
+
+    :help local-additions
 
 ## Using it in a new location
 
@@ -20,6 +22,9 @@ You shouldn't have a `~/.vimrc` or `~/.vim` directory.
 If you're not using vim 8; create a `.vimrc` with:
 
     runtime vimrc
+
+This can be also be used to customise your local vim configuration without
+having uncommitted changes in your repository.
 
 ## Adding plugins
 
