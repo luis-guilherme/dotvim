@@ -11,6 +11,8 @@ Few differences:
    still have few Vim 7.x boxes)
  - Includes gvim configuration (outdated, I don't use it anymore)
 
+For further information on installed plugins:
+
     :help local-additions
 
 ## Using it in a new location
