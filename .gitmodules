@@ -40,3 +40,6 @@
 [submodule "bundle/gruvbox-community"]
 	path = bundle/gruvbox-community
 	url = https://github.com/gruvbox-community/gruvbox.git
+[submodule "bundle/vim-lsc"]
+	path = bundle/vim-lsc
+	url = https://github.com/natebosch/vim-lsc.git
