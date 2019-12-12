@@ -102,3 +102,18 @@ let NERDTreeQuitOnOpen=1
 " disable ctags completely, use it through gtags plugin
 let g:loaded_gentags#ctags = 1
 
+" LSC conf
+
+" Required for operations modifying multiple buffers like rename.
+set hidden
+
+let g:lsc_preview_split_direction = "below"
+
+" dependent on gruvbox theme
+highlight link lscDiagnosticError GruvboxRedSign
+highlight link lscDiagnosticWarning GruvboxYellowSign
+
+autocmd CompleteDone * silent! pclose
+
+" add you lsc_server_commands and lsc_auto_map locally
+
