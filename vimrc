@@ -57,11 +57,11 @@ let g:syntastic_mode_map = {
     \ 'mode': 'passive',
     \ 'active_filetypes': [ 'python', 'go' ] }
 
-" make easy to perform a check
-noremap <C-F6> :SyntasticCheck<CR>
+" make easy to perform a check (C-F6)
+noremap <F30> :SyntasticCheck<CR>
 
-"" vim-autoformat
-noremap <C-F5> :Autoformat<CR>
+"" vim-autoformat (C-F5)
+noremap <F29> :Autoformat<CR>
 
 " enable omnicompletion
 set omnifunc=syntaxcomplete#Complete
