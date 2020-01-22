@@ -36,26 +36,26 @@ set mouse=a
 call plug#begin('~/.vim/plugged')
 
 " git
-Plug 'tpope/vim-fugitive.git'
-Plug 'airblade/vim-gitgutter.git'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 " tmux
-Plug 'tmux-plugins/vim-tmux-focus-events.git'
-Plug 'roxma/vim-tmux-clipboard.git'
+Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'roxma/vim-tmux-clipboard'
 Plug 'wincent/terminus'
 
 " life improvements
-Plug 'gruvbox-community/gruvbox.git'
-Plug 'scrooloose/nerdtree.git'
+Plug 'gruvbox-community/gruvbox'
+Plug 'scrooloose/nerdtree'
 Plug 'qpkorr/vim-bufkill'
 Plug 'Chiel92/vim-autoformat'
-Plug 'jsfaint/gen_tags.vim.git'
+Plug 'jsfaint/gen_tags.vim'
 
 " language support
-Plug 'fatih/vim-go.git'
-Plug 'natebosch/vim-lsc.git'
-Plug 'samsaga2/vim-z80.git'
-Plug 'scrooloose/syntastic.git'
+Plug 'fatih/vim-go'
+Plug 'natebosch/vim-lsc'
+Plug 'samsaga2/vim-z80'
+Plug 'scrooloose/syntastic'
 
 call plug#end()
 
