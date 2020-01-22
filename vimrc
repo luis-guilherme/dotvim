@@ -31,6 +31,34 @@ set laststatus=2
 " enable mouse
 set mouse=a
 
+" plugin dependent conf starts
+
+call plug#begin('~/.vim/plugged')
+
+" git
+Plug 'tpope/vim-fugitive.git'
+Plug 'airblade/vim-gitgutter.git'
+
+" tmux
+Plug 'tmux-plugins/vim-tmux-focus-events.git'
+Plug 'roxma/vim-tmux-clipboard.git'
+Plug 'wincent/terminus'
+
+" life improvements
+Plug 'gruvbox-community/gruvbox.git'
+Plug 'scrooloose/nerdtree.git'
+Plug 'qpkorr/vim-bufkill'
+Plug 'Chiel92/vim-autoformat'
+Plug 'jsfaint/gen_tags.vim.git'
+
+" language support
+Plug 'fatih/vim-go.git'
+Plug 'natebosch/vim-lsc.git'
+Plug 'samsaga2/vim-z80.git'
+Plug 'scrooloose/syntastic.git'
+
+call plug#end()
+
 set statusline =
 " Buffer number
 set statusline +=[%n]
@@ -66,10 +94,7 @@ noremap <F29> :Autoformat<CR>
 " enable omnicompletion
 set omnifunc=syntaxcomplete#Complete
 
-call pathogen#infect()
-call pathogen#helptags()
-
-" looks nice; apparently needs to go after pathogen
+" looks nice
 set termguicolors
 set background=dark
 let g:gruvbox_italic=1
