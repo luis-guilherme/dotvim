@@ -56,6 +56,7 @@ Plug 'fatih/vim-go'
 Plug 'natebosch/vim-lsc'
 Plug 'samsaga2/vim-z80'
 Plug 'scrooloose/syntastic'
+Plug 'tomtom/tcomment_vim'
 
 call plug#end()
 
