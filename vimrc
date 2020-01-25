@@ -64,7 +64,7 @@ function! StatusLine(current, width)
   if a:current
     let l:s .= crystalline#mode() . crystalline#right_mode_sep('')
   else
-    let l:s .= '%#CrystallineInactive#'
+    let l:s .= '%#Crystalline#'
   endif
   let l:s .= ' %<%f%h%w%m%r '
   if a:current
