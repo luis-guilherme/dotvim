@@ -147,6 +147,10 @@ let g:loaded_gentags#ctags = 1
 " Required for operations modifying multiple buffers like rename.
 set hidden
 
+" better for some messages
+set cmdheight=2
+set shortmess+=c
+
 let g:lsc_preview_split_direction = "below"
 
 " dependent on gruvbox theme
