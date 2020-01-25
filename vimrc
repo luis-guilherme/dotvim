@@ -25,9 +25,6 @@ filetype plugin indent on
 " line numbers
 set number
 
-" always show status
-set laststatus=2
-
 " enable mouse
 set mouse=a
 
@@ -50,6 +47,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'qpkorr/vim-bufkill'
 Plug 'Chiel92/vim-autoformat'
 Plug 'jsfaint/gen_tags.vim'
+Plug 'rbong/vim-crystalline'
 
 " language support
 Plug 'fatih/vim-go'
@@ -60,19 +58,40 @@ Plug 'tomtom/tcomment_vim'
 
 call plug#end()
 
-set statusline =
-" Buffer number
-set statusline +=[%n]
-" File description
-set statusline +=\ %f\ %h%m%r%w
-" Filetype
-set statusline +=%y
-" Name of the current branch (needs fugitive.vim)
-set statusline +=\ %{fugitive#statusline()}
-" Total number of lines in the file
-set statusline +=%=%-10L
-" Line, column and percentage
-set statusline +=%=%-14.(%l,%c%V%)\ %P
+function! StatusLine(current, width)
+  let l:s = ''
+
+  if a:current
+    let l:s .= crystalline#mode() . crystalline#right_mode_sep('')
+  else
+    let l:s .= '%#CrystallineInactive#'
+  endif
+  let l:s .= ' %f%h%w%m%r '
+  if a:current
+    let l:s .= crystalline#right_sep('', 'Fill') . ' %{fugitive#head()}'
+  else
+    let l:s .= ' %{fugitive#head()}'
+  endif
+
+  let l:s .= '%='
+  if a:current
+    let l:s .= crystalline#left_sep('', 'Fill') . ' %{&paste ?"PASTE ":""}%{&spell?"SPELL ":""}'
+    let l:s .= crystalline#left_mode_sep('')
+  endif
+  if a:width > 80
+    let l:s .= ' %{&ft}[%{&fenc!=#""?&fenc:&enc}][%{&ff}] %l/%L %c%V %P '
+  else
+    let l:s .= ' '
+  endif
+
+  return l:s
+endfunction
+
+let g:crystalline_enable_sep = 1
+let g:crystalline_statusline_fn = 'StatusLine'
+let g:crystalline_theme = 'gruvbox'
+
+set laststatus=2
 
 " syntastic
 let g:syntastic_python_checkers = ['flake8', 'pyflakes']
