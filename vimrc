@@ -79,7 +79,7 @@ function! StatusLine(current, width)
     let l:s .= crystalline#left_mode_sep('')
   endif
   if a:width > 80
-    let l:s .= ' %{&ft} [%{&fenc!=#""?&fenc:&enc}][%{&ff}] %c%V %l/%L %P '
+    let l:s .= ' %{&ft} [%{&fenc!=#""?&fenc:&enc}][%{&ff}] %3(%c%V%) %l/%L %P '
   else
     let l:s .= ' '
   endif
