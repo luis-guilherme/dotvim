@@ -66,7 +66,7 @@ function! StatusLine(current, width)
   else
     let l:s .= '%#CrystallineInactive#'
   endif
-  let l:s .= ' %f%h%w%m%r '
+  let l:s .= ' %<%f%h%w%m%r '
   if a:current
     let l:s .= crystalline#right_sep('', 'Fill') . ' %{fugitive#statusline()}'
   else
