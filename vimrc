@@ -33,7 +33,7 @@ set mouse=a
 call plug#begin('~/.vim/plugged')
 
 " git
-Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive', { 'tag': 'v3.2' }
 Plug 'airblade/vim-gitgutter'
 
 " tmux
