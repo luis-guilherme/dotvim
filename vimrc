@@ -53,7 +53,6 @@ Plug 'rbong/vim-crystalline'
 Plug 'fatih/vim-go'
 Plug 'natebosch/vim-lsc'
 Plug 'samsaga2/vim-z80'
-Plug 'scrooloose/syntastic'
 Plug 'tomtom/tcomment_vim'
 
 call plug#end()
@@ -85,21 +84,6 @@ let g:crystalline_statusline_fn = 'StatusLine'
 let g:crystalline_theme = 'gruvbox'
 
 set laststatus=2
-
-" syntastic
-let g:syntastic_python_checkers = ['flake8', 'pyflakes']
-let g:syntastic_go_checkers = ['go', 'golint', 'govet', 'errcheck']
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_loc_list_height = 5
-
-" default to passive and manual checks
-let g:syntastic_mode_map = {
-    \ 'mode': 'passive',
-    \ 'active_filetypes': [ 'python', 'go' ] }
-
-" make easy to perform a check (C-F6)
-noremap <F30> :SyntasticCheck<CR>
 
 "" vim-autoformat (C-F5)
 noremap <F29> :Autoformat<CR>
@@ -143,6 +127,8 @@ let NERDTreeQuitOnOpen=1
 let g:loaded_gentags#ctags = 1
 
 " LSC conf
+"
+let g:lsc_auto_map = {'defaults': v:true, 'FindImplementations': ''}
 
 " Required for operations modifying multiple buffers like rename.
 set hidden
