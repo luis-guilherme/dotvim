@@ -119,7 +119,7 @@ set autoread
 au CursorHold,CursorHoldI * checktime
 
 " make easier to open NERDTree
-map <C-n> :NERDTreeToggle<CR>
+map <leader>n :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
 
 "" gen_tags.vim (reguires GNU global, aka gtags)
