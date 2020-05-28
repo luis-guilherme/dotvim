@@ -2,7 +2,7 @@
 
 Required:
 
- - tmux 2.4+
+ - tmux 2.7+
  - xclip (this is for X, sorry)
  - requires a powerline compatible font (tip: install `fonts-powerline` in Debian/Ubuntu)
 
