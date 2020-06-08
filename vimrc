@@ -99,6 +99,12 @@ let g:gruvbox_italic=1
 let g:gruvbox_contrast_dark="medium"
 let g:gruvbox_guisp_fallback = "fg"
 set spell spelllang=en_gb
+
+" some types that shouldn't have spell check on
+autocmd FileType json setlocal nospell
+autocmd FileType conf setlocal nospell
+autocmd FileType xml setlocal nospell
+
 colorscheme gruvbox
 
 " EOL whitespace
