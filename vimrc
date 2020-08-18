@@ -28,6 +28,9 @@ set number
 " enable mouse
 set mouse=a
 
+" set term title
+set title
+
 " plugin dependent conf starts
 
 call plug#begin('~/.vim/plugged')
