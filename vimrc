@@ -30,6 +30,7 @@ set mouse=a
 
 " set term title
 set title
+set titleold=
 
 " plugin dependent conf starts
 
