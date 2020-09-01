@@ -102,7 +102,9 @@ set background=dark
 let g:gruvbox_italic=1
 let g:gruvbox_contrast_dark="medium"
 let g:gruvbox_guisp_fallback = "fg"
-set spell spelllang=en_gb
+
+" toggle spell check
+map <leader>s :set spell! spelllang=en_gb<CR>
 
 " some types that shouldn't have spell check on
 autocmd FileType json setlocal nospell
