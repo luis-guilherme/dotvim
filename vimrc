@@ -52,6 +52,7 @@ Plug 'qpkorr/vim-bufkill'
 Plug 'Chiel92/vim-autoformat'
 Plug 'jsfaint/gen_tags.vim'
 Plug 'rbong/vim-crystalline'
+Plug 'godlygeek/tabular'
 
 " language support
 Plug 'fatih/vim-go'
