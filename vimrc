@@ -150,6 +150,8 @@ set hidden
 " better for some messages
 set cmdheight=2
 set shortmess+=c
+" for lsc erros
+set shortmess-=F
 
 let g:lsc_preview_split_direction = "below"
 
