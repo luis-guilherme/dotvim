@@ -16,24 +16,47 @@ XTerm.vt100.translations: #override \n\
     Ctrl Shift <Key>T: scroll-forw(1, halfpage) \n\
     Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
     Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
-!Theme Nine
-xterm*background: rgb:1a/1a/1a
-xterm*foreground: rgb:d6/d6/d6
-xterm*color0: rgb:00/00/00
-xterm*color1: rgb:9e/18/28
-xterm*color2: rgb:00/88/00
-xterm*color3: rgb:96/8a/38
-xterm*color4: rgb:41/41/71
-xterm*color5: rgb:96/3c/59
-xterm*color6: rgb:41/81/79
-xterm*color7: rgb:be/be/be
-xterm*color8: rgb:66/66/66
-xterm*color9: rgb:cf/61/71
-xterm*color10: rgb:7c/bc/8c
-xterm*color11: rgb:ff/f7/96
-xterm*color12: rgb:41/86/be
-xterm*color13: rgb:cf/9e/be
-xterm*color14: rgb:71/be/be
-xterm*color15: rgb:ff/ff/ff
-xterm*cursorColor: #d6d6d6
 
+! Generated with :
+! XRDB2Xreources.py
+!
+*.foreground:  #e6d4a3
+*.background:  #1e1e1e
+*.cursorColor: #bbbbbb
+!
+! Black
+*.color0:      #161819
+*.color8:      #7f7061
+!
+! Red
+*.color1:      #f73028
+*.color9:      #be0f17
+!
+! Green
+*.color2:      #aab01e
+*.color10:     #868715
+!
+! Yellow
+*.color3:      #f7b125
+*.color11:     #cc881a
+!
+! Blue
+*.color4:      #719586
+*.color12:     #377375
+!
+! Magenta
+*.color5:      #c77089
+*.color13:     #a04b73
+!
+! Cyan
+*.color6:      #7db669
+*.color14:     #578e57
+!
+! White
+*.color7:      #faefbb
+*.color15:     #e6d4a3
+!
+! Bold, Italic, Underline
+*.colorBD:     #978771
+!*.colorIT:
+!*.colorUL:
