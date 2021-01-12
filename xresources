@@ -8,7 +8,7 @@ XTerm.vt100.metaSendsEscape: true
 ! Styling
 XTerm.vt100.faceName: JetBrains Mono
 XTerm.vt100.boldMode: true
-XTerm.vt100.faceSize: 11
+XTerm.vt100.faceSize: 9
 XTerm.vt100.internalBorder: 0
 XTerm.borderWidth: 0
 XTerm.vt100.translations: #override \n\
