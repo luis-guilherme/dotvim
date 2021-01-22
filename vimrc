@@ -159,7 +159,5 @@ let g:lsc_preview_split_direction = "below"
 highlight link lscDiagnosticError GruvboxRedSign
 highlight link lscDiagnosticWarning GruvboxYellowSign
 
-autocmd CompleteDone * silent! pclose
-
 " add you lsc_server_commands and lsc_auto_map locally
 
