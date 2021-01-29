@@ -165,3 +165,6 @@ highlight link lscDiagnosticWarning GruvboxYellowSign
 
 " add you lsc_server_commands and lsc_auto_map locally
 
+" vista
+let g:vista_default_executive = 'vim_lsc'
+
