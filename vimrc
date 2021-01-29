@@ -25,6 +25,9 @@ filetype plugin indent on
 " line numbers
 set number
 
+" cursor line
+set cursorline
+
 " enable mouse
 set mouse=a
 
