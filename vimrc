@@ -155,6 +155,9 @@ set shortmess-=F
 
 let g:lsc_preview_split_direction = "below"
 
+" disable preview when doing auto-complete
+set completeopt-=preview
+
 " dependent on gruvbox theme
 highlight link lscDiagnosticError GruvboxRedSign
 highlight link lscDiagnosticWarning GruvboxYellowSign
