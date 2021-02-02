@@ -111,6 +111,10 @@ let g:gruvbox_guisp_fallback = "fg"
 " toggle spell check
 map <leader>s :set spell! spelllang=en_gb<CR>
 
+" toggle autoformat paragraphs
+map <leader>a :set formatoptions -=a<CR>
+map <leader>A :set formatoptions +=a<CR>
+
 " some types that shouldn't have spell check on
 autocmd FileType json setlocal nospell
 autocmd FileType conf setlocal nospell
