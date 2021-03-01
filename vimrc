@@ -56,6 +56,7 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'jsfaint/gen_tags.vim'
 Plug 'rbong/vim-crystalline'
 Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 Plug 'vimwiki/vimwiki'
 
 " language support
@@ -171,4 +172,10 @@ let g:vista_default_executive = 'vim_lsc'
 let g:vimwiki_list = [{'path': '~/textfiles/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_global_ext = 0
+
+" vim-markdown
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_frontmatter = 1
+let g:vim_markdown_conceal_code_blocks = 0
+autocmd FileType markdown setlocal conceallevel=2
 
