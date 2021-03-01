@@ -178,5 +178,5 @@ let g:vista_default_executive = 'vim_lsc'
 
 " vimwiki
 let g:vimwiki_list = [{'path': '~/textfiles/',
-                      \ 'syntax': 'markdown', 'ext': '.md'}]
+                      \ 'syntax': 'markdown', 'ext': '.wiki'}]
 
