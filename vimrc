@@ -56,6 +56,7 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'jsfaint/gen_tags.vim'
 Plug 'rbong/vim-crystalline'
 Plug 'godlygeek/tabular'
+Plug 'vimwiki/vimwiki'
 
 " language support
 Plug 'fatih/vim-go'
@@ -174,4 +175,8 @@ highlight link lscDiagnosticWarning GruvboxYellowSign
 
 " vista
 let g:vista_default_executive = 'vim_lsc'
+
+" vimwiki
+let g:vimwiki_list = [{'path': '~/textfiles/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
 
