@@ -65,6 +65,7 @@ Plug 'natebosch/vim-lsc'
 Plug 'samsaga2/vim-z80'
 Plug 'tomtom/tcomment_vim'
 Plug 'liuchengxu/vista.vim'
+Plug 'https://tildegit.org/sloum/gemini-vim-syntax.git'
 
 call plug#end()
 
