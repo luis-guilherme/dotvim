@@ -165,7 +165,12 @@ highlight link lscDiagnosticWarning GruvboxYellowSign
 " add you lsc_server_commands and lsc_auto_map locally
 
 " vista
-let g:vista_default_executive = 'vim_lsc'
+let g:vista_default_executive = 'ctags'
+
+let g:vista_executive_for = {
+  \ 'scala': 'vim_lsc',
+  \ 'python': 'vim_lsc',
+  \ }
 
 " vimwiki
 let g:vimwiki_list = [{'path': '~/textfiles/',
