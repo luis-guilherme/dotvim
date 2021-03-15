@@ -62,7 +62,6 @@ Plug 'fatih/vim-go'
 Plug 'natebosch/vim-lsc'
 Plug 'samsaga2/vim-z80'
 Plug 'tomtom/tcomment_vim'
-Plug 'liuchengxu/vista.vim'
 Plug 'https://tildegit.org/sloum/gemini-vim-syntax.git'
 
 call plug#end()
@@ -163,14 +162,6 @@ highlight link lscDiagnosticError GruvboxRedSign
 highlight link lscDiagnosticWarning GruvboxYellowSign
 
 " add you lsc_server_commands and lsc_auto_map locally
-
-" vista
-let g:vista_default_executive = 'ctags'
-
-let g:vista_executive_for = {
-  \ 'scala': 'vim_lsc',
-  \ 'python': 'vim_lsc',
-  \ }
 
 " vimwiki
 let g:vimwiki_list = [{'path': '~/textfiles/',
