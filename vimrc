@@ -137,7 +137,7 @@ map <leader>n :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
 
 " make easier to use FZF
-map <leader>p :FZF<CR>
+map <leader>f :FZF<CR>
 
 "" gen_tags.vim (reguires GNU global, aka gtags)
 " disable ctags completely, use it through gtags plugin
