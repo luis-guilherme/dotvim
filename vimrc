@@ -49,6 +49,7 @@ Plug 'wincent/terminus'
 " life improvements
 Plug 'gruvbox-community/gruvbox'
 Plug 'scrooloose/nerdtree'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'qpkorr/vim-bufkill'
 Plug 'Chiel92/vim-autoformat'
 Plug 'jsfaint/gen_tags.vim'
@@ -134,6 +135,9 @@ au CursorHold,CursorHoldI * checktime
 " make easier to open NERDTree
 map <leader>n :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
+
+" make easier to use FZF
+map <leader>p :FZF<CR>
 
 "" gen_tags.vim (reguires GNU global, aka gtags)
 " disable ctags completely, use it through gtags plugin
