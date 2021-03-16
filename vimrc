@@ -59,7 +59,6 @@ Plug 'plasticboy/vim-markdown'
 Plug 'vimwiki/vimwiki'
 
 " language support
-Plug 'fatih/vim-go'
 Plug 'natebosch/vim-lsc'
 Plug 'samsaga2/vim-z80'
 Plug 'tomtom/tcomment_vim'
@@ -67,6 +66,7 @@ Plug 'https://tildegit.org/sloum/gemini-vim-syntax.git'
 
 call plug#end()
 
+" crystaline conf
 function! StatusLine(current, width)
   let l:s = ''
 
@@ -109,10 +109,10 @@ let g:gruvbox_italic = 1
 let g:gruvbox_contrast_dark = "medium"
 let g:gruvbox_guisp_fallback = "fg"
 
+colorscheme gruvbox
+
 " toggle spell check
 map <leader>s :set spell! spelllang=en_gb<CR>
-
-colorscheme gruvbox
 
 " EOL whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
@@ -130,7 +130,7 @@ set updatetime=500
 
 " re-read the file if changed (if possible)
 set autoread
-au CursorHold,CursorHoldI * checktime
+au BufEnter,CursorHold,CursorHoldI * silent! checktime
 
 " make easier to open NERDTree
 map <leader>n :NERDTreeToggle<CR>
@@ -142,6 +142,17 @@ map <leader>p :FZF<CR>
 "" gen_tags.vim (reguires GNU global, aka gtags)
 " disable ctags completely, use it through gtags plugin
 let g:loaded_gentags#ctags = 1
+
+" vimwiki
+let g:vimwiki_list = [{'path': '~/textfiles/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_global_ext = 0
+
+" vim-markdown
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_frontmatter = 1
+let g:vim_markdown_conceal_code_blocks = 0
+autocmd FileType markdown setlocal conceallevel=2
 
 " LSC conf
 "
@@ -166,15 +177,4 @@ highlight link lscDiagnosticError GruvboxRedSign
 highlight link lscDiagnosticWarning GruvboxYellowSign
 
 " add you lsc_server_commands and lsc_auto_map locally
-
-" vimwiki
-let g:vimwiki_list = [{'path': '~/textfiles/',
-                      \ 'syntax': 'markdown', 'ext': '.md'}]
-let g:vimwiki_global_ext = 0
-
-" vim-markdown
-let g:vim_markdown_folding_disabled = 1
-let g:vim_markdown_frontmatter = 1
-let g:vim_markdown_conceal_code_blocks = 0
-autocmd FileType markdown setlocal conceallevel=2
 
