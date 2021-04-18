@@ -63,6 +63,8 @@ Plug 'natebosch/vim-lsc', { 'tag': 'v0.4.0' }
 Plug 'samsaga2/vim-z80'
 Plug 'tomtom/tcomment_vim'
 Plug 'https://tildegit.org/sloum/gemini-vim-syntax.git'
+Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/vim-vsnip-integ'
 
 call plug#end()
 
