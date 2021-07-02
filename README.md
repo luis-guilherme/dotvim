@@ -1,7 +1,8 @@
 # My ~/.vim
 
-Managed by [vim-plug](https://github.com/junegunn/vim-plug) and compatible with
-Neovim.
+Managed by [vim-plug](https://github.com/junegunn/vim-plug).
+
+A few things require nvim 0.5.0 or later, but won't load if not possible.
 
 For further information on installed plugins:
 
@@ -16,6 +17,8 @@ My repo is in `~/.vim/`! You shouldn't have a `~/.vimrc` or `~/.vim` directory.
 If you're not using vim 8; create a `.vimrc` with:
 
     runtime vimrc
+
+And you may need to comment out some plugins that require nvim > 0.5.0.
 
 This can be also be used to customise your local vim configuration without
 having uncommitted changes in your repository.

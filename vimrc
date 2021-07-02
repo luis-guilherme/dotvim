@@ -49,7 +49,6 @@ Plug 'wincent/terminus'
 " life improvements
 Plug 'gruvbox-community/gruvbox'
 Plug 'scrooloose/nerdtree'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'qpkorr/vim-bufkill'
 Plug 'Chiel92/vim-autoformat'
 Plug 'jsfaint/gen_tags.vim'
@@ -59,12 +58,19 @@ Plug 'plasticboy/vim-markdown'
 Plug 'vimwiki/vimwiki'
 
 " language support
-Plug 'natebosch/vim-lsc', { 'tag': 'v0.4.0' }
+Plug 'natebosch/vim-lsc'
 Plug 'samsaga2/vim-z80'
 Plug 'tomtom/tcomment_vim'
 Plug 'https://tildegit.org/sloum/gemini-vim-syntax.git'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
+
+" nvim 0.5.0 or later
+if has('nvim-0.5')
+    Plug 'nvim-lua/popup.nvim'
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim'
+end
 
 call plug#end()
 
@@ -138,8 +144,8 @@ au BufEnter,CursorHold,CursorHoldI * silent! checktime
 map <leader>n :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
 
-" make easier to use FZF
-map <leader>f :FZF<CR>
+" make easier to use telescope
+nnoremap <leader>f <cmd>Telescope find_files<CR>
 
 "" gen_tags.vim (reguires GNU global, aka gtags)
 " disable ctags completely, use it through gtags plugin
