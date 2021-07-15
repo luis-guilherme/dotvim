@@ -18,8 +18,6 @@ If you're not using vim 8; create a `.vimrc` with:
 
     runtime vimrc
 
-And you may need to comment out some plugins that require nvim > 0.5.0.
-
 This can be also be used to customise your local vim configuration without
 having uncommitted changes in your repository.
 
