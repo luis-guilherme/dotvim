@@ -146,6 +146,7 @@ let NERDTreeQuitOnOpen=1
 
 " make easier to use telescope
 nnoremap <leader>f <cmd>Telescope find_files<CR>
+nnoremap <leader>fb <cmd>Telescope buffers<CR>
 
 "" gen_tags.vim (requires GNU global, aka gtags)
 " disable ctags completely, use it through gtags plugin
