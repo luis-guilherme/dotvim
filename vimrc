@@ -105,7 +105,7 @@ set laststatus=2
 
 "" vim-autoformat (C-F5)
 noremap <F29> :Autoformat<CR>
-au BufWrite *.py,*.c,*.h,*.cpp :Autoformat
+au BufWrite *.py,*.c,*.h,*.cpp,*.hs :Autoformat
 
 " enable omnicompletion
 set omnifunc=syntaxcomplete#Complete
