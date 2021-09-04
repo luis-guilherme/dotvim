@@ -64,6 +64,7 @@ Plug 'tomtom/tcomment_vim'
 Plug 'https://tildegit.org/sloum/gemini-vim-syntax.git'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
+Plug 'neovimhaskell/haskell-vim'
 
 " nvim 0.5.0 or later
 if has('nvim-0.5')
@@ -184,6 +185,9 @@ set completeopt-=preview
 " dependent on gruvbox theme
 highlight link lscDiagnosticError GruvboxRedSign
 highlight link lscDiagnosticWarning GruvboxYellowSign
+
+" haskell syntax
+let g:haskell_classic_highlighting = 1
 
 " add you lsc_server_commands and lsc_auto_map locally
 
